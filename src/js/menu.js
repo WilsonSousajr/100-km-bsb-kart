@@ -7,7 +7,7 @@ const hamburguer_menu = {
     bottom: document.querySelector("#bottom")
 }
 
-hamburguer.addEventListener("click", function(){
+const hamburguerMenuAnimation = () => {
     hamburguer_menu.top.classList.toggle('hamburguer-top-rotate')
     hamburguer_menu.middle.classList.toggle('hidden')
     hamburguer_menu.bottom.classList.toggle('hamburguer-bottom-rotate')
