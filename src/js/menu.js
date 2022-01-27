@@ -9,6 +9,6 @@ const hamburguer_menu = {
 
 const hamburguerMenuAnimation = () => {
     hamburguer_menu.top.classList.toggle('hamburguer-top-rotate')
-    hamburguer_menu.middle.classList.toggle('hidden')
+    hamburguer_menu.middle.classList.toggle('middle')
     hamburguer_menu.bottom.classList.toggle('hamburguer-bottom-rotate')
 })
