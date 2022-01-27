@@ -99,6 +99,18 @@ header{
 
 /*MENU ITEMS-------------------------*/
 
+.nav-items{
+    transform: translateY(190px);
+}
+
+#nav-items{
+    transition: all .2s ease-in-out;
+    position: relative;
+    top: -190px;
+    background: var(--white);
+    border-bottom: 1px solid var(--medium-blue);
+}
+
 .current-page{
     color: var(--medium-blue) !important;
 }
