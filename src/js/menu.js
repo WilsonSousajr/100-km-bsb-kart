@@ -20,4 +20,4 @@ const showNavBar = () => {
 hamburguer.addEventListener("click", function(){
     hamburguerMenuAnimation()
     showNavBar()
-})
+})  
