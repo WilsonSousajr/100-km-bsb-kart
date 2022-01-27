@@ -78,8 +78,6 @@ header{
 }
 
 .hamburguer-top-rotate{
-    position: relative;
-    top: 5px;
     transform: rotate(45deg);
     top: 12px;
 }
