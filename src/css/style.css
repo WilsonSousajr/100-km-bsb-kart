@@ -72,7 +72,9 @@ header{
     width: 100%;
     height: 3px;
     background: var(--medium-blue);
-    transition: 0.5s ease-in-out;
+    position: relative;
+    top: 0px;
+    transition: .2s ease-in-out;
 }
 
 .hamburguer-top-rotate{
