@@ -21,3 +21,6 @@ hamburguer.addEventListener("click", function(){
     hamburguerMenuAnimation()
     showNavBar()
 })  
+
+
+
