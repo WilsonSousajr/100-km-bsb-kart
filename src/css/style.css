@@ -84,6 +84,10 @@ header{
     top: 12px;
 }
 
+.middle{
+    transform: rotate(45deg);
+    top: 6px;
+}
 .hamburguer-bottom-rotate{
     position: relative;
     bottom: 6px;
