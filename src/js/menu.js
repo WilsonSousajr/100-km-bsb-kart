@@ -1,4 +1,5 @@
 const hamburguer =  document.querySelector("#hamburguer")
+const navbar = document.querySelector("#nav-items")
 
 const hamburguer_menu = {
     top: document.querySelector("#top"),
