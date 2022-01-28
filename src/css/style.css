@@ -166,6 +166,7 @@ header{
     text-align: center;
     align-content: center;
     color: var(--ultra-ultra-light-blue);
+    background: var(--white);
     font-size: 0.63rem;
     position: fixed;
     bottom: 0;
