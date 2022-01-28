@@ -1,2 +1,132 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+/*GLOBAL-----------------------------*/
+
+:root{
+    --dark-blue: #03045E;
+    --medium-blue: #0077B6;
+    --light-blue: #48CAE4;
+    --ultra-light-blue: #CAF0F8;
+    --ultra-ultra-light-blue: #90E0EF;
+    --white: #fff;
+    --black: #000;
+}
+
+/*END GLOBAL--------------------------*/
+
+/*FORM--------------------------------*/
+
+#form-div{
+    width: 100%;
+    height: 100%;
+}
+
+/*FORM TITLE--------------------------*/
+
+#form-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+#form-title h1{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: var(--dark-blue)
+}
+
+#form-title img{
+    margin-left: 5px;
+    margin-top: 15px;
+    width: 15px;
+    height: 15px;
+}
+
+/*END FORM TITLE--------------------------*/
+
+
+#form{
+    width: 100%;
+    margin-top: 12px;
+    padding: 0 10px 0 10px;
+}
+
+#user-image-div{
+    width: 100%;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#user-image-div span{
+    z-index: -5;
+    position: relative;
+    top: 50px;
+    left: -2px;
+}
+
+#user-image-div img{
+    width: 50px;
+    height: 50px;
+}
+
+#avatar{
+    display: none;
+}
+
+#user-image-div label{
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+#user-image-div label img{
+    width: 15px;
+    height: 15px;
+}
+
+/*FORM BODY-----------------------------*/
+
+#form-body{
+    margin: 0 auto;
+    max-width: 360px;
+    margin-top: 16px;
+}
+
+.input-label{
+    color: var(--light-blue);
+    margin-bottom: 10px;
+}
+
+.input-box{
+    display: block;
+    width: 138px;
+    height: 23px;
+    border: 1px solid var(--ultra-light-blue)
+}
+
+.input-box:focus{
+    border: 2px solid var(--light-blue);
+    outline: 0;
+}
+
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+/*CATEGORIES--------------------------*/
+
+#categories{
+    background: var(--white);
+}
+
+#categories option{
+    background: var(--white);
+}
+
+/*
+
+/*AGE----------------------------------*/
