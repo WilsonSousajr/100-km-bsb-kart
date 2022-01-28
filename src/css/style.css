@@ -107,6 +107,10 @@ header{
     border-bottom: 1px solid var(--medium-blue);
 }
 
+#nav-items:last-child{
+    margin-bottom: 4px;
+}
+
 .current-page{
     color: var(--medium-blue) !important;
 }
