@@ -130,3 +130,134 @@
 /*
 
 /*AGE----------------------------------*/
+
+#age{
+    width: 69px;
+}
+
+/*END AGE------------------------------*/
+
+/*PHONE AND EMAIL----------------------*/
+
+#ddd{
+    width: 23px;
+}
+
+#phone-number{
+    width: 93px;
+}
+
+#ddd-label{
+    margin-right: 10px;
+}
+
+#email-div{
+    position: relative;
+    top: -25px;
+}
+
+
+.phone-and-ddd{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.label-ddd-and-phone-number{
+    font-size: 0.5rem;
+    color: var(--ultra-light-blue);
+}
+
+/*END PHONE AND NUMBER-----------------*/
+
+/*TERMS AND CONDITIONS CHECKBOX--------*/
+
+#terms-check-container{
+    position: relative;
+    bottom: 10px;
+}
+
+
+.field-checkbox .field{
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    opacity: 0;
+}
+
+.field-checkbox .field:not(:checked) + .description,
+.field-checkbox .field:checked + .description{
+    display: flex;
+    align-items: center;
+}
+
+.field-checkbox .field:not(:checked) + .description::before,
+.field-checkbox .field:checked + .description::before{
+    margin-right: 5px;
+}
+
+.field-checkbox .field:not(:checked) + .description::before{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--ultra-ultra-light-blue);
+}
+
+.field-checkbox .field:checked + .description::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--ultra-ultra-light-blue);
+    color: var(--white);
+    background-color: var(--medium-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description{
+    font-size: 0.8rem;
+}
+
+.description  a{
+    margin-left: 4px;
+    color: var(--medium-blue)
+}
+
+/*END TERMS AND CONDITIONS CHECKBOX----*/
+
+/*SUBMIT BUTTON------------------------*/
+
+#button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#submit-button{
+    width: 123px;
+    height: 38px;
+    margin-top: 100px;
+    background: var(--ultra-light-blue);
+    color: var(--medium-blue);
+    font-family: 'Oswald', sans-serif;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+#submit-button:hover{
+    transition: all .5s ease-in-out;
+    color: var(--ultra-light-blue);
+    background: var(--light-blue);
+}
+
+
+/*END SUBMIT BUTTON--------------------*/
+
+/*END FORM BODY-------------------------*/
+
+
+/*END FORM------------------------------*/
