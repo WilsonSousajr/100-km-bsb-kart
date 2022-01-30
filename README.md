@@ -102,11 +102,12 @@ You can install this project and run it locally to test it or study how LocalSto
 
 ## Roadmap
 
-- [ ] Mobile desing
-- [ ] Tablet desing
-- [ ] Desktop desing
-- [ ] User registration
-- [ ] Implement WebStorage
+- [ ] Website desing
+- [ ] Responsiveness
+- [ ] Form 
+- [ ] Modals
+- [ ] Dynamically added FormsCards
+- [ ] LocalStorage
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
