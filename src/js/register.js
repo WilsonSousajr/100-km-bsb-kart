@@ -58,8 +58,9 @@ let addToArray = (array) => {
 const cardsArray = JSON.parse(localStorage.getItem('rivals') || '[]')
 
 button.addEventListener("click", function(){
-    addToArray(cards.cardsArray)
-    console.log(cards.cardsArray)
+    addToArray(cardsArray)
+    addToLocalStorage(cardsArray)
+    console.log(cardsArray)
 })
 
 
