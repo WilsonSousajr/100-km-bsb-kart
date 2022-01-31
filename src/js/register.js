@@ -55,11 +55,7 @@ let addToArray = (array) => {
     array.push(formCardFactory(createFormVariables()))
 }
 
-const cards = {
-
-    cardsArray: []
-
-}
+const cardsArray = JSON.parse(localStorage.getItem('rivals') || '[]')
 
 button.addEventListener("click", function(){
     addToArray(cards.cardsArray)
