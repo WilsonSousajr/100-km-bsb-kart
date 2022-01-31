@@ -90,6 +90,18 @@ let imagePreview = () => {
 imagePreview()
 
 
+//Save in localStorage
+
+let addToLocalStorage = (array) => {
+    // Check if is null
+    localStorage.setItem("rivals", JSON.stringify(array))
+}
+
+
+
+
+
+
 
 
 
