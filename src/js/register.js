@@ -23,6 +23,7 @@ let createFormVariables = () => {
 
     return {
 
+        // image_BASE64,
         first_name,
         last_name,
         age,
