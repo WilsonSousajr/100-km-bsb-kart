@@ -1,11 +1,11 @@
 const button = document.querySelector("#submit-button")
 let avatar_image = document.querySelector("#avatar")
 let image_input = document.querySelector("#avatar-file")
-let image_BASE64;
+
 
 let createFormVariables = () => {
 
-
+    // let image_BASE64;
     let first_name = document.querySelector("#first-name").value
     let last_name = document.querySelector("#last-name").value
     let age = document.querySelector("#age").value
@@ -23,6 +23,7 @@ let createFormVariables = () => {
 
     return {
 
+        // image_BASE64,
         first_name,
         last_name,
         age,
@@ -38,7 +39,7 @@ let createFormVariables = () => {
 let formCardFactory = function(formVariables){
     return {
 
-        avatar: image_BASE64,
+        // avatar: image_BASE64,
         first_name: formVariables.first_name,
         last_name: formVariables.last_name,
         age: formVariables.age,
@@ -54,15 +55,12 @@ let addToArray = (array) => {
     array.push(formCardFactory(createFormVariables()))
 }
 
-const cards = {
-
-    cardsArray: []
-
-}
+const cardsArray = JSON.parse(localStorage.getItem('rivals') || '[]')
 
 button.addEventListener("click", function(){
-    addToArray(cards.cardsArray)
-    console.log(cards.cardsArray)
+    addToArray(cardsArray)
+    addToLocalStorage(cardsArray)
+    console.log(cardsArray)
 })
 
 
@@ -90,6 +88,18 @@ let imagePreview = () => {
 }
 
 imagePreview()
+
+
+//Save in localStorage
+
+let addToLocalStorage = (array) => {
+    // Check if is null
+    localStorage.setItem("rivals", JSON.stringify(array))
+}
+
+
+
+
 
 
 
