@@ -5,7 +5,7 @@ let image_input = document.querySelector("#avatar-file")
 
 let createFormVariables = () => {
 
-
+    // let image_BASE64;
     let first_name = document.querySelector("#first-name").value
     let last_name = document.querySelector("#last-name").value
     let age = document.querySelector("#age").value
