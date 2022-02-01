@@ -1,6 +1,7 @@
 const button = document.querySelector("#submit-button")
 let avatar_image = document.querySelector("#avatar")
 let image_input = document.querySelector("#avatar-file")
+let id = 0;
 
 
 let createFormVariables = () => {
@@ -14,12 +15,12 @@ let createFormVariables = () => {
     
     // Phone number
     
-    ddd = document.querySelector("#ddd").value
-    phone_number = document.querySelector("#phone-number").value
+    let ddd = document.querySelector("#ddd").value
+    let phone_number = document.querySelector("#phone-number").value
 
     // End phone number
 
-    email = document.querySelector("#email-input").value
+    let email = document.querySelector("#email-input").value
 
     return {
 
@@ -39,6 +40,7 @@ let createFormVariables = () => {
 let formCardFactory = function(formVariables){
     return {
 
+        id: id++,
         // avatar: image_BASE64,
         first_name: formVariables.first_name,
         last_name: formVariables.last_name,
@@ -61,6 +63,7 @@ button.addEventListener("click", function(){
     addToArray(cardsArray)
     addToLocalStorage(cardsArray)
     console.log(cardsArray)
+
 })
 
 
@@ -72,12 +75,22 @@ avatar_image.addEventListener("click", () => {
     image_input.click()
 })
 
+//Add maximum image size
+
+let maximumImageSize = () => {
+       if(typeof(image_input.files) != undefined){
+        let size = parseFloat(image_input.files[0].size / 1024).toFixed(2)
+        if(size)
+        alert(size + 'kb')
+    }
+}
 
 let imagePreview = () => {
     image_input.addEventListener("change", (event) => {
         let reader = new FileReader();
 
         reader.onload = () => {
+            maximumImageSize()
             avatar_image.src = reader.result
             image_BASE64 = reader.result
         }
@@ -96,6 +109,7 @@ let addToLocalStorage = (array) => {
     // Check if is null
     localStorage.setItem("rivals", JSON.stringify(array.slice(0, 11)))
 }
+
 
 
 
