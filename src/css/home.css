@@ -1,0 +1,103 @@
+:root{
+    --dark-blue: #03045E;
+    --medium-blue: #0077B6;
+    --light-blue: #48CAE4;
+    --ultra-light-blue: #CAF0F8;
+    --ultra-ultra-light-blue: #90E0EF;
+    --white: #fff;
+    --black: #000;
+}
+
+/*MAIN-----------------------------*/
+
+#main{
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+}
+
+#pilots-h2{
+    font-size: 1.15rem;
+    position: absolute;
+    top: 70px;
+    color: var(--dark-blue);
+    z-index: -1;
+}
+
+/*FORM CARD-----------------------------*/
+
+#form-card-group{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 983px;
+    position: absolute;
+    top: 130px;
+    z-index: -1;
+}
+
+.form-card{
+    width: 251px;
+    height: 160px;
+    border: 1px solid var(--ultra-light-blue);
+    border-radius: 10px;
+    background-color: var(--white);
+    margin: 10px;
+    padding: 5px 0px 28px 8px;
+    z-index: -1;
+    box-shadow: 2px 4px 9px -2px rgba(0,0,0,0.65);
+}
+
+
+.form-card .categorie{
+    color: var(--medium-blue);
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+.name-age-avatar{
+    width: 50px;
+    height: 106px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.name-age-avatar h3{
+    font-size: 0.8rem;
+    font-weight: lighter;
+    margin-bottom: 6px;
+}
+
+.name-age-avatar img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 6px;
+}
+
+.email-number{
+    display: flex;
+    justify-content: space-between;
+}
+
+.email-number h3{
+    font-size: 0.8rem;
+    background: var(--ultra-ultra-light-blue);
+    color: var(--white);
+    width: 86px;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.email-number .email{
+    margin-left: 10px;
+}
+
+.email-number .phone-number{
+    margin-right: 12px;
+}
+
+/*END FORM CARD---------------------------*/
+
+/*END MAIN-------------------------*/
