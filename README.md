@@ -45,9 +45,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About the project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-
 A website based on the design created on the Figma platform: <a href="https://www.figma.com/file/ablEoFKSdellBIh5NJQ469/100kmBSB?node-id=0%3A1
 ">Acess</a>
 
