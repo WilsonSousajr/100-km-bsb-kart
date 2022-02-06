@@ -10,7 +10,7 @@
 [![MIT License][license-shield]][license-url]
 
 
-   <a href="https://github.com/WilsonJunior1/100-km-bsb-kart">View Demo</a>
+   <a href="100kmbsb.netlify.app">Acess website</a>
     ·
    <a href="https://github.com/WilsonJunior1/100-km-bsb-kart/issues">Report Bug</a>
     ·
