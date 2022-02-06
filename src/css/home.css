@@ -29,7 +29,7 @@
 #form-card-group{
     display: flex;
     flex-wrap: wrap;
-    max-width: 983px;
+    max-width: 1084px;
     position: absolute;
     top: 130px;
     z-index: -1;
