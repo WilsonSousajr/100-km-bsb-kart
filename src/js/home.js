@@ -23,3 +23,9 @@ let makeCards = (forms) => {
         </div>
     `
 }
+
+forms_objects.forEach(forms => {
+    makeCards(forms)
+})
+
+
