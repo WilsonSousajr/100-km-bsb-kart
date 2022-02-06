@@ -99,12 +99,12 @@ You can install this project and run it locally to test it or study how LocalSto
 
 ## Roadmap
 
-- [ ] Website desing
-- [ ] Responsiveness
-- [ ] Form 
+- [X] Website desing
+- [X] Responsiveness
+- [X] Form 
 - [ ] Modals
-- [ ] Dynamically added FormsCards
-- [ ] LocalStorage
+- [X] Dynamically added FormsCards
+- [X] LocalStorage
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
