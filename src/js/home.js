@@ -5,6 +5,16 @@ let form_card_group = document.querySelector("#form-card-group")
 let pilots_h2 = document.querySelector("#pilots-h2")
 
 
+if(form_card_group === null){
+    pilots_h2.innerHTML = "We do not have any pilot yet.."
+}else{
+    if(forms_objects.length === 1){
+        pilots_h2.innerHTML = `We have ${forms_objects.length} pilot:`
+    }
+    else{
+        pilots_h2.innerHTML = `We have ${forms_objects.length} pilots:`
+    }
+}
 
 let makeCards = (forms) => {
     form_card_group.innerHTML += `
