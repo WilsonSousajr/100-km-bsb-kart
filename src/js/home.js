@@ -2,6 +2,7 @@ let forms_objectsJSON = localStorage.getItem('rivals')
 
 let forms_objects = JSON.parse(forms_objectsJSON)
 let form_card_group = document.querySelector("#form-card-group")
+let pilots_h2 = document.querySelector("#pilots-h2")
 
 
 
