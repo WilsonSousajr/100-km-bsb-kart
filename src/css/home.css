@@ -102,3 +102,14 @@
 /*END FORM CARD---------------------------*/
 
 /*END MAIN-------------------------*/
+
+/*MEDIA QUERY-------------------------*/
+
+@media(min-width: 834px){
+    #main{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/*END MEDIA QUERY-------------------------*/
