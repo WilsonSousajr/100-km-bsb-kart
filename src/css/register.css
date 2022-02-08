@@ -253,6 +253,7 @@
     border: none;
     cursor: pointer;
     transition: all .5s ease-in-out;
+    z-index: -5;
 }
 
 #submit-button:hover{
