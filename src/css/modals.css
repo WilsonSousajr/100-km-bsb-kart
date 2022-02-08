@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald&display=swap');
+
+:root{
+    --dark-blue: #03045E;
+    --medium-blue: #0077B6;
+    --light-blue: #48CAE4;
+    --ultra-light-blue: #CAF0F8;
+    --ultra-ultra-light-blue: #90E0EF;
+    --white: #fff;
+    --black: #000;
+}
+
+/*ABOUT MODAL--------------------------------*/
+
+#about-image{
+    cursor: pointer;
+}
+
+.toggle{
+    visibility: visible !important;
+    z-index: 20;
+}
+
+#about-modal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    top: 4rem;
+    justify-content: center;
+    align-content: center;
+    visibility: hidden;
+}
+
+#about{
+    width: 328px;
+    height: 496px;
+    padding: 19px 21px 19px 21px;
+    background: var(--white);
+    border: 2px solid var(--ultra-ultra-light-blue);
+    border-radius: 10px;
+    box-shadow: 5px 10px 7px -4px rgba(0,0,0,0.41);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title-close{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--medium-blue);
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.close{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.close::before,
+.close::after{
+    position: absolute;
+    left: 15px;
+    content: '';
+    height: 30px;
+    width: 2px;
+    background: var(--medium-blue);
+}
+
+.close::before{
+    transform: rotate(45deg);
+}
+
+.close::after{
+    transform: rotate(-45deg);
+}
+
+/*IMAGES CARROUSEL---------------------*/
+
+#images-carrousel{
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+}
+
+#images-carrousel img{
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.cropped{
+    object-fit: cover;
+}
+
+
+
+/*END IMAGES CARROUSEL-----------------*/
+
+/*ABOUT MODAL TEXT--------------------*/
+
+#modal-text{
+    margin-top: 34px;
+}
+
+#modal-text p{
+    margin: 5px 0px 10px 0px;
+}
+
+#only-first-place,
+#about-race,
+#modal-text p{
+    text-align: center;
+}
+
+#only-first-place{
+    color: var(--light-blue);
+}
+
+/*END ABOUT MODAL TEXT--------------------*/
+
+/*END ABOUT MODAL----------------------------*/
+
+/*TERMS MODAL------------------------------*/
+
+#terms-modal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    top: 4rem;
+    justify-content: center;
+    align-content: center;
+    visibility: hidden;
+    z-index: 20;
+}
+
+#terms{
+    width: 328px;
+    height: 496px;
+    max-height: 496px;
+    padding: 19px 21px;
+    overflow-y: auto;
+    background: var(--white);
+    border: 2px solid var(--ultra-ultra-light-blue);
+    border-radius: 10px;
+    box-shadow: 5px 10px 7px -4px rgba(0,0,0,0.41);
+    font-family: 'Montserrat', sans-serif;
+}
+
+#about-terms{
+    font-weight: lighter;
+    margin-top: 19px;
+    font-weight: 300;
+}
+
+.terms-p{
+    margin-top: 13px;
+    font-size: .7rem;
+}
+
+.terms{
+    margin-top: 19px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+#terms-link{
+    cursor: pointer;
+}
+/*END TERMS MODAL--------------------------*/
