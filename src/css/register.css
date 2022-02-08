@@ -109,7 +109,12 @@
     display: block;
     width: 138px;
     height: 23px;
-    border: 1px solid var(--ultra-light-blue)
+    border: 1px solid var(--ultra-light-blue);
+    transition: all .1s ease-in-out;
+}
+
+.input-box:hover{
+    border: 1px solid var(--ultra-light-blue);
 }
 
 .input-box:focus{
