@@ -19,6 +19,8 @@
 .toggle{
     visibility: visible !important;
     z-index: 20;
+    opacity: 1 !important;
+    transition: all .3s ease-in;
 }
 
 #about-modal{
