@@ -135,6 +135,7 @@
     display: flex;
     position: absolute;
     top: 4rem;
+    opacity: 0;
     justify-content: center;
     align-content: center;
     visibility: hidden;
