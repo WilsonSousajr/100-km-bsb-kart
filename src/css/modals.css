@@ -174,5 +174,11 @@
 
 #terms-link{
     cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+#terms-link:hover{
+    color: var(--light-blue);
+    transition: all .2s ease-in-out;
 }
 /*END TERMS MODAL--------------------------*/
