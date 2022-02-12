@@ -66,6 +66,56 @@ button.addEventListener("click", function(){
     addToArray(cardsArray)
     addToLocalStorage(cardsArray)
     console.log(cardsArray)
+})
+
+let reloadWindow = () => {
+    window.location.reload()
+}
+//Array length validation
+
+let verifyArrayLength = (array) => {
+    if(array.length > 9){
+        array.slice(0, 10)
+        cardsArray = array
+    }
+}
+
+// Form validations
+
+
+
+let validateForm = (form) => {
+    for(prop in form){
+        if(!form[prop]){
+            showAndCloseFillInputsModal()
+            console.log(`Preencha o valor ${prop}`)
+            formEmptyStyle(prop, true)
+        }
+        else{
+            formEmptyStyle(prop, false)
+        }
+    }
+}
+
+let onlyNumbers = (age, ddd, phone_number) => {
+    let age_listener = document.querySelector(`#${age}`)
+    let ddd_listener = document.querySelector(`#${ddd}`)
+    let phone_listener = document.querySelector(`#${phone_number}`)
+
+    function isNumberKey(evt){
+        let charCode = (evt.which) ? evt.which : evt.keyCode;
+
+        if(charCode == 46 || charCode > 31 && (charCode < 48 || charCode > 57)){
+            evt.preventDefault();
+            return false;
+        }
+
+        return true;
+    }
+
+    age_listener.addEventListener("keypress", isNumberKey, false)
+    ddd_listener.addEventListener("keypress", isNumberKey, false)
+    phone_listener.addEventListener("keypress", isNumberKey, false)
 
 })
 
