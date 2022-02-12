@@ -61,6 +61,8 @@ const cardsArray = JSON.parse(localStorage.getItem('rivals') || '[]')
 
 
 button.addEventListener("click", function(){
+    validateForm(createFormVariables())
+    verifyArrayLength(cardsArray)
     addToArray(cardsArray)
     addToLocalStorage(cardsArray)
     console.log(cardsArray)
