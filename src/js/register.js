@@ -16,7 +16,7 @@ let createFormVariables = () => {
     // Phone number
     
     let ddd = document.querySelector("#ddd").value
-    let phone_number = document.querySelector("#phone-number").value
+    let phone_number = document.querySelector("#phone_number").value
 
     // End phone number
 
