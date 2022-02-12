@@ -157,6 +157,14 @@ let formEmptyStyle = (prop, boolean) => {
     }
 }
 
+let inputsEventListener = (empty1) => {
+    empty1.addEventListener("keyup", () => {
+        empty1.style.border = '1px solid #CAF0F8'
+        if(empty1.value === ''){
+            empty1.style.border = "2px solid red"
+        }
+    })
+}
 
 
 // Avatar image
