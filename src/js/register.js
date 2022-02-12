@@ -141,7 +141,21 @@ let showAndCloseFillInputsModal = () => {
 
     close_fill.addEventListener("click", () => {
         fill_inputs_modal.classList.remove("toggle")
-})
+    })
+}
+
+
+
+let formEmptyStyle = (prop, boolean) => {
+    let empty1 = document.querySelector(`#${prop}`)
+    if(boolean === true){
+        empty1.style.border = '2px solid red'
+        inputsEventListener(empty1)
+    }
+    else{
+        empty1.style.border = '1px solid #CAF0F8'
+    }
+}
 
 
 
