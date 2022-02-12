@@ -117,6 +117,30 @@ let onlyNumbers = (age, ddd, phone_number) => {
     ddd_listener.addEventListener("keypress", isNumberKey, false)
     phone_listener.addEventListener("keypress", isNumberKey, false)
 
+}
+
+
+onlyNumbers(Object.keys(createFormVariables())[2],Object.keys(createFormVariables())[4],Object.keys(createFormVariables())[5]);
+
+let isEmail = (email) => {
+    emailRegEx = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i
+}
+
+
+
+
+
+//Fill all inputs modal
+
+let showAndCloseFillInputsModal = () => {
+    const fill_inputs_modal = document.querySelector("#fill-inputs-modal")
+    const close_fill = document.querySelector("#close-fill")
+    
+    fill_inputs_modal.classList.toggle("toggle")
+    
+
+    close_fill.addEventListener("click", () => {
+        fill_inputs_modal.classList.remove("toggle")
 })
 
 
