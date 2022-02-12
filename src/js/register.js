@@ -10,7 +10,7 @@ let createFormVariables = () => {
     let first_name = document.querySelector("#first_name").value
     let last_name = document.querySelector("#last_name").value
     let age = document.querySelector("#age").value
-    let category = document.querySelector("#categories")
+    let category = document.querySelector("#category")
 .value
     
     // Phone number
