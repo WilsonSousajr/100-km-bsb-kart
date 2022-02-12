@@ -1,7 +1,7 @@
 const button = document.querySelector("#submit-button")
 let avatar_image = document.querySelector("#avatar")
 let image_input = document.querySelector("#avatar-file")
-let id = 0;
+
 
 
 let createFormVariables = () => {
