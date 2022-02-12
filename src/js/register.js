@@ -40,7 +40,6 @@ let createFormVariables = () => {
 let formCardFactory = function(formVariables){
     return {
 
-        id: id++,
         // avatar: image_BASE64,
         first_name: formVariables.first_name,
         last_name: formVariables.last_name,
