@@ -20,7 +20,7 @@ let createFormVariables = () => {
 
     // End phone number
 
-    let email = document.querySelector("#email-input").value
+    let email = document.querySelector("#email").value
 
     return {
 
