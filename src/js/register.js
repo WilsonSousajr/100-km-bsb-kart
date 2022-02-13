@@ -65,6 +65,7 @@ button.addEventListener("click", function(){
     verifyArrayLength(cardsArray)
     addToArray(cardsArray)
     addToLocalStorage(cardsArray)
+    isEmail(createFormVariables().email)
     console.log(cardsArray)
 })
 
