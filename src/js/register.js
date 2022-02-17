@@ -144,7 +144,11 @@ let onlyNumbers = (age, ddd, phone_number) => {
 onlyNumbers(Object.keys(createFormVariables())[2],Object.keys(createFormVariables())[4],Object.keys(createFormVariables())[5]);
 
 let isEmail = (email) => {
-    emailRegEx = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i
+    return String(email)
+    .toLowerCase()
+    .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    )
 }
 
 
