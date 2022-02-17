@@ -232,4 +232,4 @@ imagePreview()
 let addToLocalStorage = (array) => {
     // Check if is null
     localStorage.setItem("rivals", JSON.stringify(array.slice(0, 10)))
-
+}
