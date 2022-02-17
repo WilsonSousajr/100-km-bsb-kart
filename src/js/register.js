@@ -93,6 +93,7 @@ let validateForm = (form) => {
             formEmptyStyle(prop, true)
         }
         else{
+            cont.value++
             formEmptyStyle(prop, false)
         }
     }
