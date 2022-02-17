@@ -179,8 +179,16 @@ header{
 }
 
 
-
-
 /*END FOOTER-------------------------*/
+
+/*MEDIA QUERIES----------------------*/
+
+@media(min-width: 1440px){
+    #menu-hamburguer{
+        display: none;
+    }
+}
+
+/*END MEDIA QUERIES------------------*/
 
 
