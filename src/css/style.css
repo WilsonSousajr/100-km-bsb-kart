@@ -187,6 +187,31 @@ header{
     #menu-hamburguer{
         display: none;
     }
+    #nav-items{
+        position: absolute;
+        top: 15px;
+        right: 30px;
+        z-index: 9999;
+        border: none;
+        width: 30%;
+        max-width: 450px;
+    }
+    #nav-items ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #nav-items img{
+        display: none;
+    }
+
+    .current-page{
+        color: var(--white) !important;
+        background: var(--ultra-ultra-light-blue);
+        padding: 5px 20px;
+        text-align: center;
+        border-radius: 20px;
+    }
 }
 
 /*END MEDIA QUERIES------------------*/
