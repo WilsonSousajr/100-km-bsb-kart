@@ -63,11 +63,7 @@ const cardsArray = JSON.parse(localStorage.getItem('rivals') || '[]')
 
 button.addEventListener("click", function(){
     validateForm(createFormVariables())
-    verifyArrayLength(cardsArray)
-    addToArray(cardsArray)
-    addToLocalStorage(cardsArray)
-    isEmail(createFormVariables().email)
-    console.log(cardsArray)
+    cont.value = 0;
 })
 
 let reloadWindow = () => {
