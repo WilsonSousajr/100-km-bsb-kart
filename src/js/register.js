@@ -97,6 +97,25 @@ let validateForm = (form) => {
             formEmptyStyle(prop, false)
         }
     }
+
+    if(isEmail(createFormVariables().email) === null){
+        formEmptyStyle('email', true)
+        cont.value--
+    }
+
+    if(cont.value === 7 && check.checked === false){
+        let agree_close = document.querySelector("#close-agree")
+        agree_modal.classList.toggle("toggle")
+        agree_close.addEventListener("click", function(){
+            agree_modal.classList.remove("toggle")
+        })
+    }
+
+    if(cont.value === 7 && check.checked === true){
+        verifyArrayLength(cardsArray)
+        addToArray(cardsArray)
+        addToLocalStorage(cardsArray)
+    }
 }
 
 let onlyNumbers = (age, ddd, phone_number) => {
