@@ -89,7 +89,6 @@ let validateForm = (form) => {
     for(prop in form){
         if(!form[prop]){
             showAndCloseFillInputsModal()
-            console.log(`Preencha o valor ${prop}`)
             formEmptyStyle(prop, true)
         }
         else{
