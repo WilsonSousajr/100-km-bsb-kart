@@ -83,6 +83,9 @@ let verifyArrayLength = (array) => {
 
 
 let validateForm = (form) => {
+    let agree_modal = document.querySelector("#agree-modal")
+    let check = document.querySelector("#check")
+
     for(prop in form){
         if(!form[prop]){
             showAndCloseFillInputsModal()
