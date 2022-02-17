@@ -43,7 +43,7 @@
     border-radius: 10px;
     background-color: var(--white);
     margin: 10px;
-    padding: 5px 0px 28px 8px;
+    padding: 5px 8px 28px 8px;
     z-index: -1;
     box-shadow: 2px 4px 9px -2px rgba(0,0,0,0.65);
 }
@@ -105,11 +105,33 @@
 
 /*MEDIA QUERY-------------------------*/
 
-@media(min-width: 834px){
+@media(min-width: 744px){
     #main{
+        text-align: center;
         display: flex;
         justify-content: center;
     }
+
+    #pilots-h2{
+        font-size: 2rem;
+    }
+
+    #form-card-group{
+        width: 75%;
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
 }
+
+@media(min-width: 1440px){
+
+    
+
+    #form-card-group{
+        padding: 0 120px;
+    }
+}
+
+
 
 /*END MEDIA QUERY-------------------------*/
